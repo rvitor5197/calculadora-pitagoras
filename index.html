@@ -17,8 +17,18 @@
 <body>
 
     <header>
-        <h1>Calculadora</h1>
-        <h2>Pitágoras</h2>
+        <div id="logo">
+            <h1>Calculadora</h1>
+            <h2>Pitágoras</h2>
+        </div>
+        <!--tentando adicionar darkmode-->
+        <div id="check">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <div class="ball"></div>
+            </label>
+        </div>
+        <!--marcar o fim-->
     </header>
 
     <main>
@@ -28,16 +38,16 @@
             <div id="calc">
                 <h3>Qual a relação do seu triângulo?</h3>
                 <div id="box-text">
-                    <label for="first-number">Insira o 1º lado:</label>
+                    <label class="text-side" for="first-number">Insira o 1º lado:</label>
                     <input class="inputs" type="number" name="first-number" id="fnum"> <br>
 
-                    <label for="second-number">Insira o 2º lado:</label>
+                    <label class="text-side" for="second-number">Insira o 2º lado:</label>
                     <input class="inputs" type="number" name="second-number" id="secondnum"> <br>
 
-                    <label for="thirt-number">Insira o 3º lado:</label>
+                    <label class="text-side" for="thirt-number">Insira o 3º lado:</label>
                     <input class="inputs" type="number" name="thirt-number" id="thnum"> <br>
 
-                    <label for="result">O seu triângulo é:</label>
+                    <label id="result-t" for="result">O seu triângulo é:</label>
                     <p id="res"> ... </p> <br>
 
                 </div>
