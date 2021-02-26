@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="/css/style.css">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
     <title>Calculadora Pitágoras</title>
 </head>
 
@@ -23,7 +26,7 @@
         <section>
 
             <div id="calc">
-                <h3>Calcule aqui o seu triângulo</h3>
+                <h3>Qual a relação do seu triângulo?</h3>
                 <div id="box-text">
                     <label for="first-number">Insira o 1º lado:</label>
                     <input class="inputs" type="number" name="first-number" id="fnum"> <br>
@@ -34,6 +37,9 @@
                     <label for="thirt-number">Insira o 3º lado:</label>
                     <input class="inputs" type="number" name="thirt-number" id="thnum"> <br>
 
+                    <label for="result">O seu triângulo é:</label>
+                    <p id="res"> ... </p> <br>
+
                 </div>
 
                 <button type="button" id="calcu" onclick="sum()">
@@ -42,30 +48,55 @@
 
             </div>
 
-
-
-
         </section>
+
 
     </main>
 
 
-    <script>
+    <div id="relacoes">
+        <p><b>Triângulo Equilátero:</b> possui os três lados iguais.</p>
+        <p><b>Triângulo Isósceles:</b> possui dois lados iguais, e um diferente.</p>
+        <p><b>Triângulo Escaleno:</b> possui os três lados diferentes.</p>
+    </div>
 
-        function sum() {
-            var lado1, lado2, lado3, res;
-            lado1 = Number(document.getElementById('fnum').value);
-            lado2 = Number(document.getElementById('secondnum').value);
-            lado3 = Number(document.getElementById('thnum').value);
+    <div id="lados">
+        <p>
+            <b> Lados do Triângulo Retângulo:</b><br>
+            O lado oposto ao ângulo de 90º é chamado de <b>hipotenusa</b>.
+            Esse é o maior dos três lados da figura. <br>
 
-            if (lado1 == lado2 && lado3 == lado2) {
-                console.log('equilatero');
-            } else if (lado1 == lado2 || lado3 == lado2 || lado3 == lado1) {
-                console.log('isoceles');
-            } else {
-                console.log('outro')
-            }
-        }
+            Os demais lados são denominados de <b>cateto adjacente</b> e <b>cateto oposto</b>. <br>
+
+            Note que a hipotenusa é representada como (a) e os catetos como (b) e (c).
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>Feito por <a href="https://github.com/rvitor5197" target="_blank">
+                <b>Vitor Fonseca</b></a>
+        </p>
+
+        <ul>
+            <li>
+                <a href="https://github.com/rvitor5197" target="_blank">
+                    <img src="./img/github.svg" alt="github">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/vitor-fonseca-5915951a0/" target="_blank">
+                    <img src="./img/linkedin.svg" alt="linkedin">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/rvitor5197/" target="_blank">
+                    <img src="./img/instagram.svg" alt="instagram">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="js/script.js">
 
     </script>
 

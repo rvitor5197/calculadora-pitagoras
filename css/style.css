@@ -40,7 +40,7 @@ h3{
 }
 
 #calc h3 {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 }
 
 #box-text {
@@ -52,6 +52,7 @@ h3{
 
 .inputs {
     height: 2rem;
+    margin-left: 1rem;
 }
 
 #calcu {
@@ -69,5 +70,66 @@ h3{
 #calcu:hover {
     background: var(--red);
     color: var(--background);
+}
+
+#res {
+    margin-top: .5rem;
+    padding: 0.5rem;
+    width: 8rem;
+    color: aliceblue;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 10px;
+    background: #2b2d42;
+}
+
+#relacoes {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+    padding-top: 2rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    bottom: 50px;
+}
+
+#lados {
+    margin-top: 1.5rem;
+    margin-bottom: 10rem;
+    
+    padding-top: 2rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    bottom: 50px;
+}
+
+.footer{
+    height: 7.6rem;
+    background: var(--background);
+    padding-top: 2rem;
+    padding-left: 4rem;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+b{
+    color: var(--red);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    
+}
+
+ul li {
+    display: inline;
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
 }
 
